@@ -45,7 +45,6 @@ const products = ref([
 </script>
 
 <style lang="scss" scoped>
-@import url("https://fonts.cdnfonts.com/css/clash-display");
 .products {
   padding: 0 80px;
   display: grid;
@@ -58,8 +57,8 @@ const products = ref([
   &-link {
     display: block;
     text-align: center;
-    color: #2a254b;
-    font-family: 'Clash Display', sans-serif;
+    color: var(--purple);
+    font-family: var(--clash);
     text-decoration: none;
     &:hover{
         text-decoration: underline;

@@ -49,7 +49,7 @@ const aboutBrands = [
   &-title {
     text-align: center;
     font-size: 24px;
-    color: #2a254b;
+    color: var(--purple);
     margin: 0 0 84px 0;
   }
   &-elements{
@@ -59,7 +59,7 @@ const aboutBrands = [
     justify-content: space-between;
   }
   &-element{
-    color: #2a254b;
+    color: var(--purple);
     &__image{
         display: block;
         margin-bottom: 12px;

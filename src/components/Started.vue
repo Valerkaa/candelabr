@@ -6,7 +6,9 @@
         link="#"
         colorTitle="#fff"
         colorDescription="#fff"
-        background="#2a254b"/>
+        background="var(--purple)"
+        colorLink="#fff"/>
+        <img src="/img/started-img.jpg" alt="">
     </div>
 </template>
 <script setup>
@@ -15,4 +17,11 @@ import HeroInfo from './HeroInfo.vue';
 
 
 <style lang="scss" scoped>
+.started{
+    padding: 0 80px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    column-gap: 16px;
+}
 </style>

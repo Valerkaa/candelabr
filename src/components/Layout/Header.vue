@@ -5,25 +5,25 @@
       <div class="header-top-search">
         <img src="/svg/header_search_icon.svg" alt="" />
       </div>
-      <a href="" class="header-logo">Candelabr</a>
+      <router-link to="/" class="header-logo">Candelabr</router-link>
       <div class="header-top-right">
         <div href="" class="header-top-right__cart">
-          <a href="">
+          <router-link to="/cart">
             <img src="/svg/header-shopping-cart.svg" alt="" />
-          </a>
+          </router-link>
         </div>
         <div href="" class="header-top-right__profile">
-          <a href="">
+          <router-link to="/user">
             <img src="/svg/header-user-avatar.svg" alt="" />
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
     <div class="header-menu">
-        <a class="header-menu__link"
-        :href="element.path"
+        <router-link class="header-menu__link"
+        :to="element.path"
         v-for="(element,i) of menu"
-        :key="i">{{ element.name }}</a>
+        :key="i">{{ element.name }}</router-link>
     </div>
   </header>
 </template>
@@ -80,8 +80,8 @@ const menu = [
     }
   }
   &-logo {
-    font-family: "Clash Display", sans-serif;
-    color: #22202e;
+    font-family: var(--clash);
+    color: var(--black);
     font-size: 24px;
     text-decoration: none;
     text-align: center;
@@ -96,7 +96,7 @@ const menu = [
     align-items: center;
     &__link{
         margin: 0 22px;
-        color: #726e8d;
+        color: var(--gray);
         text-decoration: none;
     
         &:hover{
