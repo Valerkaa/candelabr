@@ -27,3 +27,31 @@ const props = defineProps ({
 })
 
 </script>
+
+<style lang="scss" scoped>
+.product{
+    &-image{
+        display: block;
+        margin-bottom: 24px;
+    }
+    &-name{
+        display: block;
+        color: #2a254b;
+        font-size: 20px;
+        line-height: 28px;
+        font-family: 'Clash Display', sans-serif;
+        margin-bottom: 8px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &-price{
+        display: block;
+        font-size: 18px;
+        color: #2a254b;
+    }
+}
+
+
+
+</style>
