@@ -7,12 +7,12 @@
         colorTitle="#fff"
         colorDescription="#fff"
         background="var(--purple)"
-        colorLink="#fff"/>
+        colorLink="secondary"/>
         <img src="/img/started-img.jpg" alt="">
     </div>
 </template>
 <script setup>
-import HeroInfo from './HeroInfo.vue';
+import HeroInfo from '@/components/HeroInfo.vue';
 </script>
 
 

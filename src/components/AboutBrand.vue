@@ -56,7 +56,7 @@ const aboutBrands = [
     
     display: grid;
     grid-template-columns: repeat(4, 210px);
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   &-element{
     color: var(--purple);

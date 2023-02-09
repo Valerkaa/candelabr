@@ -1,6 +1,7 @@
 <template>
   <div :style="{ backgroundColor: background }" class="hero-info">
     <div class="hero-info-text">
+     
       <h2 class="hero-info-title" :style="{ color: colorTitle }">
         {{ title }}
       </h2>
@@ -8,7 +9,7 @@
         {{ description }}
       </span>
     </div>
-    <uiButton type="link" to="/" background="rgba(118, 118, 118, 0.15)">Lorem, ipsum.</uiButton>
+    <uiButton :color="colorLink || 'secondary'" type="link" to="/" >Lorem, ipsum.</uiButton>
     <!-- <a :style="{color:colorLink}" :href="link" class="hero-info-link">Lorem, ipsum.</a> -->
   </div>
 </template>
@@ -34,7 +35,7 @@ const props = defineProps({
   },
   colorLink: {
     type: String,
-    default: "#22202e",
+    required:false,
   },
   colorDescription: {
     type: String,

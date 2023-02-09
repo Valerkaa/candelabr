@@ -1,26 +1,34 @@
 <template>
   <button
     v-if="type === 'button'"
-    :style="{ backgroundColor: background }"
-    class="btn"
+    :class="[
+      'btn',
+      {
+        'btn--primary': color === 'primary',
+        'btn--secondary': color === 'secondary',
+        'btn--lightgray': color === 'lightgray',
+      }
+    ]"
   >
     <slot />
   </button>
   <router-link
     v-else
     :to="to"
-    class="btn"
-    :style="{ backgroundColor: background }"
-    ><slot
-  /></router-link>
+    :class="[
+      'btn',
+      {
+        'btn--primary': color === 'primary',
+        'btn--secondary': color === 'secondary',
+        'btn--lightgray': color === 'lightgray',
+      }
+    ]"
+><slot/></router-link>
 </template>
 
 <script setup>
 const props = defineProps({
-  background: {
-    type: String,
-    required: false,
-  },
+
   type: {
     type: String,
     default: "button",
@@ -29,17 +37,15 @@ const props = defineProps({
     type: String,
     required: false,
   },
-  colorBtn: {
+  color: {
     type: String,
-    default: "#000",
-  },
+    required:false,
+  }
 });
 </script>
 
 <style lang="scss" scoped>
 .btn {
-  background: var(--puprle);
-  color: #fff;
   padding: 0 32px;
   display: inline-flex;
   align-items: center;
@@ -52,6 +58,19 @@ const props = defineProps({
   &:hover {
     opacity: 0.8;
   }
+  &--primary{
+    background: var(--purple);
+    color: #fff;
+  }
+  &--secondary {
+    background: rgba(118, 118, 118, 0.15);
+    color: #fff;
+  }
+  &--lightgray{
+    background: #f9f9f9;
+    color: var(--black);
+  }
+
   //   text-decoration: none;
   //   width: 170px;
   //   height: 56px;

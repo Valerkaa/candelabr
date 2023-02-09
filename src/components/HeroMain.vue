@@ -5,14 +5,13 @@
     description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere maiores
         eveniet animi, magnam repellendus placeat." 
     link="#"
-    colorLink="#22202e"
-    background="#fff"
-    color="#000"/>
+    colorLink="lightgray"
+    background="#fff"/>
   </div>
 </template>
 
 <script setup>
-import HeroInfo from "./HeroInfo.vue";
+import HeroInfo from "@/components/HeroInfo.vue";
 </script>
 <style lang="scss" scoped>
 .hero {

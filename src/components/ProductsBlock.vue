@@ -9,13 +9,16 @@
         :price="product.price"
       />
     </div>
-    <a href="" class="products-link">View collection</a>
+    <div class="products-link">
+      <uiButton color="lightgray" type="link" to="/">Lorem, ipsum.</uiButton>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import Product from "./Layout/Product.vue";
+import Product from "@/components/Layout/Product.vue";
+import uiButton from "@/components/UI/Button.vue";
 const products = ref([
   {
     id: 1,
@@ -55,14 +58,7 @@ const products = ref([
     margin-bottom: 56px;
   }
   &-link {
-    display: block;
     text-align: center;
-    color: var(--purple);
-    font-family: var(--clash);
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-    }
   }
 }
 </style>
