@@ -12,6 +12,7 @@
             <img src="/svg/header-shopping-cart.svg" alt="" />
           </router-link>
         </div>
+        
         <div href="" class="header-top-right__profile">
           <router-link to="/user">
             <img src="/svg/header-user-avatar.svg" alt="" />

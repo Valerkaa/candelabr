@@ -67,8 +67,8 @@ const props = defineProps({
     color: #fff;
   }
   &--lightgray{
-    background: #f9f9f9;
-    color: var(--black);
+    background: #c6b2a7;
+    color: #fff;
   }
 
   //   text-decoration: none;

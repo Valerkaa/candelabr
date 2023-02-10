@@ -1,10 +1,11 @@
 <template>
     <div class="container">
-      <Header />
+      <Header/>
       <Heromain />
       <AboutBrand />
       <Products />
       <Started />
+      <Subscribe/>
     </div>
   </template>
   
@@ -14,5 +15,7 @@
   import Header from "@/components/Layout/Header.vue";
   import AboutBrand from "@/components/AboutBrand.vue";
   import Started from "@/components/Started.vue";
+  import Subscribe from "@/components/Subscribe.vue";
+
   </script>
   
